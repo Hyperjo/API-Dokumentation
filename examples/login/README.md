@@ -25,8 +25,8 @@ zur login.php weitergeleitet.
 ### 2) login.php
 
 Die Seite login.php wird benötigt, um die Anmeldung durchzuführen. Zunächst ist der Benutzer noch nicht angemeldet und ihm wird der Inhalt inklusive dem
-Anmelde-Button angezeigt. Sobald der Benutzer auf diesen klickt, wird er zur Seite login.hyperjo.de weitergeleitet. Bei der Anfrage wird die URL der
-login.php (hier: `https://login-test.hyperjo.de/login.php`) und die benötigten Rechte (hier: `name, money`) mitgegeben.
+Anmelde-Button angezeigt. Sobald der Benutzer auf diesen klickt, wird er zur Seite login.hyperjo.de weitergeleitet. Bei der Anfrage wird die URL der login.php (
+hier: `https://login-test.hyperjo.de/login.php`) und die benötigten Rechte (hier: `name, money`) mitgegeben.
 
 Im Beispiel wird folgender Link verwendet:
 
@@ -59,3 +59,26 @@ Anmeldeprozess würde neu beginnen. Die Abmeldung wird auch nach längerer Inakt
 
 Die Seite secure.php beinhaltet lediglich die Prüfung, ob ein Benutzer angemeldet ist. Sie kann als Grundlage für weitere Inhaltsseiten der Website genutzt
 werden. Die Seite index.php basiert ebenfalls auf dieser Seite.
+
+## Implementierung des Beispiels
+
+Damit das Beispiel funktioniert, müssen ein paar wenige Anpassungen durchgeführt werden, wie auch auf der Website [login-test](https://login-test.hyperjo.de)
+beschrieben. Hier am Beispiel einer Domain `test.example`.
+
+Zunächst muss im Hyperjo-Button der redirect-Link auf die tatsächliche absolute Adresse der login.php angepasst werden. Der Button sollte danach wie folgt
+aussehen.
+
+```
+<style>@import url(https://fonts.googleapis.com/css?family=Roboto);#hyperjo-button{position:relative;height:45px;width:100%;max-width:300px;box-shadow:0 4px 15px rgba(0,0,0,.2);margin:0;border:0;border-radius:3px;padding:0 30px 0 0;background:#2195f2;font-family:Roboto,sans-serif;color:#fff;font-size:14px;text-align:center;letter-spacing:.0892857143em;text-decoration:none;white-space:nowrap;user-select:none;cursor:pointer;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;display:flex;align-items:center}#hyperjo-button img{height:100%}#hyperjo-button span{width:100%}#hyperjo-button:focus{background:#1f86e4;transform:scale(.98);outline-style:initial}</style>
+<a id="hyperjo-button" href="https://login.hyperjo.de/?permissions=name,money&redirect=test.example/login.php">
+  <img src="https://static.hyperjo.de/img/logo.svg" alt="Hyperjo Logo">
+  <span>Mit HyperjoID anmelden</span>
+</a>
+```
+
+Außerdem muss auf der Seite login.php der Header, der bei erfolgreicher Übermittlung der Daten vom Login-Service aufgerufen wird, angepasst werden. In der Zeile
+würde in unserem Beispiel danach Folgendes stehen.
+
+```
+header('Location: https://test.example/');
+```
