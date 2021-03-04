@@ -1,6 +1,7 @@
 # Hyperjo-API
 
-In diesem Ordner wird jede Funktion der API in einer eigenen Datei beschrieben. Hier folgt, wie man im Allgemeinen eine Anfrage an die API stellt und wie das Ergebnis verwendet werden kann.
+In diesem Ordner wird jede Funktion der API in einer eigenen Datei beschrieben. Hier folgt, wie man im Allgemeinen eine Anfrage an die API stellt und wie das
+Ergebnis verwendet werden kann.
 
 ## Die erste Anfrage an die API
 
@@ -8,11 +9,18 @@ In unserer ersten Anfrage an die API wollen wir die aktuellen Farming-Preise aus
 
 ### Parameter
 
-Jede Anfrage an die API ist im Grunde gleich aufgebaut und besteht zum einen aus der Domain und Parametern. Mithilfe dieser Parameter können wir beschreiben, was die API zurückgeben soll.
+Jede Anfrage an die API ist im Grunde gleich aufgebaut und besteht zum einen aus der Domain und Parametern. Mithilfe dieser Parameter können wir beschreiben,
+was die API zurückgeben soll.
 
 ```
 https://api.hyperjo.de/?version=1&request=farming
 <--     Domain     -->  <--     Parameter     -->
+```
+
+Die Reihenfolge der Parameter ist egal. Die folgende Abfrage würde exakt das gleiche Ergebnis erzeugen.
+
+```
+https://api.hyperjo.de/?request=farming&version=1
 ```
 
 Die folgenden Parameter müssen bei jeder Anfrage an die API gesetzt werden.
@@ -24,11 +32,13 @@ Die folgenden Parameter müssen bei jeder Anfrage an die API gesetzt werden.
 
 ### Anfrage im Browser ausführen
 
-Um die aktuellen Farmingpreise auszulesen, kann die Domain https://api.hyperjo.de mit den Parametern `version=1` und `request=farming` wie folgt aufgerufen werden:
+Um die aktuellen Farmingpreise auszulesen, kann die Domain https://api.hyperjo.de mit den Parametern `version=1` und `request=farming` wie folgt aufgerufen
+werden:
 
 https://api.hyperjo.de/?version=1&request=farming
 
-Als Ergebnis wird im Browser ein JSON-Objekt angezeigt. Dieses Objekt enthält ein Attribut `farming`, welches wiederum eine Liste von Objekten beinhaltet. Jedes Farminggut besteht aus einem Namen, einem Symbol, welches über die angegebene URL aufrufbar ist, und dem aktuellen Preis.
+Als Ergebnis wird im Browser ein JSON-Objekt angezeigt. Dieses Objekt enthält ein Attribut `farming`, welches wiederum eine Liste von Objekten beinhaltet. Jedes
+Farminggut besteht aus einem Namen, einem Symbol, welches über die angegebene URL aufrufbar ist, und dem aktuellen Preis.
 
 ```json
 {

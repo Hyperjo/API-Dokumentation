@@ -26,7 +26,7 @@ zur login.php weitergeleitet.
 
 Die Seite login.php wird benötigt, um die Anmeldung durchzuführen. Zunächst ist der Benutzer noch nicht angemeldet und ihm wird der Inhalt inklusive dem
 Anmelde-Button angezeigt. Sobald der Benutzer auf diesen klickt, wird er zur Seite login.hyperjo.de weitergeleitet. Bei der Anfrage wird die URL der
-login.php (hier: `https://login-test.hyperjo.de/login.pgp`) und die benötigten Rechte (hier: `name, money`) mitgegeben.
+login.php (hier: `https://login-test.hyperjo.de/login.php`) und die benötigten Rechte (hier: `name, money`) mitgegeben.
 
 Im Beispiel wird folgender Link verwendet:
 
