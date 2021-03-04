@@ -63,7 +63,7 @@ werden. Die Seite index.php basiert ebenfalls auf dieser Seite.
 ## Implementierung des Beispiels
 
 Damit das Beispiel funktioniert, müssen ein paar wenige Anpassungen durchgeführt werden, wie auch auf der Website [login-test](https://login-test.hyperjo.de)
-beschrieben. Hier am Beispiel einer Domain `test.example`.
+beschrieben. Hier am Beispiel einer Domain `test.example`. Die Dateien, die oben gelistet sind, müssen unter der URL `https://test.example/` erreichbar sein.
 
 Zunächst muss im Hyperjo-Button der redirect-Link auf die tatsächliche absolute Adresse der login.php angepasst werden. Der Button sollte danach wie folgt
 aussehen.
