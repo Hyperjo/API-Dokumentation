@@ -1,6 +1,6 @@
 ## Geld
 
-Mit dieser Funktion kann abgefragt werden, die viel Geld ein Spieler insgesamt zur Verfügung hat. Es werden Kontostand und Bargeld zusammengerechnet.
+Mit dieser Funktion kann abgefragt werden, wie viel Geld ein Spieler insgesamt zur Verfügung hat. Es werden Kontostand und Bargeld zusammengerechnet.
 
 ### Anfrage
 
@@ -12,7 +12,7 @@ Mit dieser Funktion kann abgefragt werden, die viel Geld ein Spieler insgesamt z
 
 ### Beispiel
 
-`https://api.hyperjo.de/?version=1&request=money&key=[KEY]`
+`https://api.hyperjo.de/?version=1&request=money&key=978ba661-9ea9-430b-b2e1-38930d735fd9`
 
 ### Rückgabe
 

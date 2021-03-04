@@ -12,7 +12,7 @@ Kann verwendet werden, um einen Charakter-Namen zu einem Key abzufragen.
 
 ### Beispiel
 
-`https://api.hyperjo.de/?version=1&request=name&key=[KEY]`
+`https://api.hyperjo.de/?version=1&request=name&key=978ba661-9ea9-430b-b2e1-38930d735fd9`
 
 ### Rückgabe
 
