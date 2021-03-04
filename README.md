@@ -21,7 +21,7 @@ oder eine Farmingpreis-Historie. Wenn du zudem mit unserem Login-System arbeitet
 bis zu einer eigenen Handelsplattform alles umsetzen. 
 
 ## API
-Eine Übersicht aller Funktionen unserer API findest du in [diesem Ordner](Link). Du musst jedoch beachten, dass einige Funktionen 
+Eine Übersicht aller Funktionen unserer API findest du in [diesem Ordner](https://github.com/Hyperjo/Dokumentation/tree/main/documentation). Du musst jedoch beachten, dass einige Funktionen 
 einen Schlüssel (im folgenden als "Key" bezeichnet) benötigen. Dabei unterscheiden wir zwischen mehreren Arten von Keys:
 
 | Key | Beschreibung |
@@ -36,5 +36,5 @@ ein neues "Issue" hier im GitHub-Projekt mit.
 ## Login
 Die Motivation hinter unserem Login-Service ist es, zum einen ein einheitliches Login-System für unsere 
 Spieler anzubieten, aber auch um Anfängern der Webentwicklung ein eigenes Login-System zu ersparen. Ein einfaches
-Beispiel für ein System, welches den Hyperjo-Login implementiert, findest du [hier](Link). Wenn du unseren 
+Beispiel für ein System, welches den Hyperjo-Login implementiert, findest du [hier](https://github.com/Hyperjo/Dokumentation/tree/main/examples/login). Wenn du unseren 
 Login-Service nutzen möchtest, melde dich bitte zuvor bei einem Entwickler.
