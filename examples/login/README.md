@@ -63,9 +63,11 @@ werden. Die Seite index.php basiert ebenfalls auf dieser Seite.
 ## Implementierung des Beispiels
 
 Damit das Beispiel funktioniert, müssen ein paar wenige Anpassungen durchgeführt werden, wie auch auf der Website [login-test](https://login-test.hyperjo.de)
-beschrieben. Hier am Beispiel einer Domain `test.example`. Die Dateien, die oben gelistet sind, müssen unter der URL `https://test.example/` erreichbar sein.
+beschrieben. Hier am Beispiel einer Domain `test.example`. 
 
-Zunächst muss im Hyperjo-Button der redirect-Link auf die tatsächliche absolute Adresse der login.php angepasst werden. Der Button sollte danach wie folgt
+Zunächst müssen die Dateien, die oben gelistet sind, unter der URL `https://test.example/` erreichbar sein. Die Seite login.php sollte in diesem Fall unter der URL `https://test.example/login.php` liegen. 
+
+Anschließend muss im Hyperjo-Button der redirect-Link auf die tatsächliche absolute Adresse der login.php angepasst werden. Der Button sollte danach wie folgt
 aussehen.
 
 ```
@@ -76,9 +78,4 @@ aussehen.
 </a>
 ```
 
-Außerdem muss auf der Seite login.php der Header, der bei erfolgreicher Übermittlung der Daten vom Login-Service aufgerufen wird, angepasst werden. In der Zeile
-würde in unserem Beispiel danach Folgendes stehen.
-
-```
-header('Location: https://test.example/');
-```
+Zuletzt muss die Website noch bei einem Entwickler gewhitelisted werden. Melde dich dafür einfach im Support.

@@ -72,7 +72,7 @@ Jetzt wird es spannend. Nachfolgend wird in zwei Programmiersprachen gezeigt, wi
 $json = file_get_contents('https://api.hyperjo.de/?version=1&request=farming');
 $obj = json_decode($json);
 foreach ($obj->farming as $entry) {
-    echo $entry->itemName . " is at " . $entry->currentPrice . "<br>;
+    echo $entry->itemName . " is at " . $entry->currentPrice . "<br>";
 }
 ```
 
