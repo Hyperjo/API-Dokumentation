@@ -1,4 +1,4 @@
-## Geld
+## Telefonnummer
 
 Mit dieser Funktion kann die Telefonnummer von einem Charakter abgefragt werden.
 
