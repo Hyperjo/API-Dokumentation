@@ -4,12 +4,12 @@ Kann verwendet werden, um die Gültigkeit eines Keys zu überprüfen.
 
 ### Anfrage
 
-| Parameter | Beschreibung |
-| --- | --- |
-| key | Benutzer-Key |
-| version | `1` |
-| request | `valid` |
-| characterId | Charakter-ID |
+| Parameter | Beschreibung                         |
+| --- |--------------------------------------|
+| key | Benutzer-Key                         |
+| version | `1`                                  |
+| request | `valid`                              |
+| characterId | Charakter-ID (4 Zeichen) |
 
 ### Beispiel
 
@@ -20,7 +20,7 @@ Kann verwendet werden, um die Gültigkeit eines Keys zu überprüfen.
 Für eine gültige Key/Charakter-ID Kombination:
 ```json
 {
-  "characterId": 2,
+  "characterId": "D48F",
   "valid": true
 }
 ```

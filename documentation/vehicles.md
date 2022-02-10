@@ -18,7 +18,7 @@ Mit dieser Funktion können alle Fahrzeuge eines Charakters abgefragt werden. Es
 
 ```json
 {
-  "characterId": 2,
+  "characterId": "D48F",
   "vehicles": [
     {
       "displayName": "Emperor (alt)",

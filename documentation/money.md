@@ -18,7 +18,7 @@ Mit dieser Funktion kann abgefragt werden, wie viel Geld ein Spieler insgesamt z
 
 ```json
 {
-  "characterId": 2,
+  "characterId": "D48F",
   "money": 3695439
 }
 ```

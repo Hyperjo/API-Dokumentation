@@ -18,7 +18,7 @@ Kann verwendet werden, um einen Charakter-Namen zu einem Key abzufragen.
 
 ```json
 {
-  "characterId": 2,
+  "characterId": "D48F",
   "name": "Tim Lustig"
 }
 ```

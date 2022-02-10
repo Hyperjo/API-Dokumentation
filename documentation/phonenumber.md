@@ -18,7 +18,7 @@ Mit dieser Funktion kann die Telefonnummer von einem Charakter abgefragt werden.
 
 ```json
 {
-  "characterId": 2,
+  "characterId": "D48F",
   "phoneNumber": 1337
 }
 ```
